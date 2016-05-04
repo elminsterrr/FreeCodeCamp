@@ -1,2 +1,2 @@
 # FreeCodeCamp
-My learining process with FreeCodeCamp.
+My learning process with FreeCodeCamp.
