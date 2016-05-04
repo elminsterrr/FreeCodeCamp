@@ -1,8 +1,5 @@
-var szeregPoMalLitBezSpac = [];
-var stringPolaczony = "";
-
 function cleaner(str) {                                        //Funkcja, która ma za zadanie wyszukać wszystkie znaki, które nie są alfanumeryczne z podanego Stringu i je usunąć, zwracając String bez nich.
-var clean = str.replace(/[\W_]+/g, "");                        //Metoda replace(), zamienia z podanego str wszystko co jest argumentem a na argument b.
+var clean = str.replace(/[\W_]+/g, "");                        //Metoda replace(), zamienia z podanego str wszystko co jest parametrem a na parametr b (replace(a,b)).
 /*
 
 We can use special selectors in Regular Expressions to select a particular type of value.
@@ -30,21 +27,18 @@ so this regex will keep in your string only letters and numbers
 Wszystko powyższe zostanie zamienione na "" czyli nic.
 
 */
-var toLowerCase = clean.toLowerCase();                        // Bierze zmienną clean i zmienia wszystko co w niej zostało na małe litery.                               
+var toLowerCase = clean.toLowerCase();                        // Bierze zmienną clean i zmienia wszystko co ona zawiera na małe litery.                               
 var expression = /\S+/g;                                      // Wyrażenie, które ma za zadanie zaznaczyć wszystko co nie jest whitespace.       
-szeregPoMalLitBezSpac = toLowerCase.match(expression);        // Zaznacza wszystko co nie jest whitespace i robi z tego Array. The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.
-stringPolaczony = szeregPoMalLitBezSpac.join("");             // Ma połaczyć Array z poprzedniej komendy w String, który bedzie przedzielony niczym "", zmiast przecinka. The join() method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma (,).
+var szeregPoMalLitBezSpac = toLowerCase.match(expression);        // Zaznacza wszystko co nie jest whitespace i robi z tego Array. The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object.
+var stringPolaczony = szeregPoMalLitBezSpac.join("");             // Ma połaczyć Array z poprzedniej komendy w String, który bedzie przedzielony niczym (""), zmiast przecinka(,). The join() method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma (,).
   console.log("cleaner w dzialaniu...");
   return stringPolaczony;                                     // Zwraca efekt działania funkcji cleaner.                               
 }
                                                                   
-var strSplit = [];
-var strJoin = "";
-
 function reverseString(str) {                                 //Funkcja, która ma za zadanie odwrócić String podany na wejściu.
-strSplit = str.split("");                                     //Metoda dzieli String na poszczególne znaki. The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string ("") is used as the separator, the string is split between each character.
-strReverse = strSplit.reverse();                              //Metoda odwraca kolejność elementów w Array. The reverse() method reverses the order of the elements in an array.
-strJoin = strReverse.join("");                                // Ma połaczyć Array z poprzedniej komendy w String, który bedzie przedzielony niczym "", zmiast przecinka. The join() method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma (,).
+var strSplit = str.split("");                                     //Metoda dzieli String na poszczególne znaki. The split() method is used to split a string into an array of substrings, and returns the new array. Tip: If an empty string ("") is used as the separator, the string is split between each character.
+var strReverse = strSplit.reverse();                              //Metoda odwraca kolejność elementów w Array. The reverse() method reverses the order of the elements in an array.
+var strJoin = strReverse.join("");                                // Ma połaczyć Array z poprzedniej komendy w String, który bedzie przedzielony niczym "", zmiast przecinka. The join() method joins the elements of an array into a string, and returns the string. The elements will be separated by a specified separator. The default separator is comma (,).
  console.log("reverseString w dzialaniu...");
  return strJoin;                                              // Zwraca efekt działania funkcji reverseString.  
 }
