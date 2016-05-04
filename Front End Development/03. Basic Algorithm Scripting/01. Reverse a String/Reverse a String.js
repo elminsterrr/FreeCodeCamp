@@ -6,6 +6,5 @@ var strJoin = strReverse.join("");         //Ma połaczyć Array z poprzedniej k
 }
 
 var zmiana = reverseString("hello");       //Zmienna "zmiana" odwołuje się do funkcji "reverseString" z argumentem ("hello").
-
 console.log(typeof(zmiana));               //Pokazuje typ zmiennej "zmiana".
 console.log(zmiana);                       //Wywołuje zmienną "zmiana" i drukuje w konsoli efekt jej działania. Zmienna zmiana to funkcja "reverseString" z argumentem ("hello").
