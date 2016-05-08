@@ -3,13 +3,13 @@ Return the length of the longest word in the provided sentence.
 
 Your response should be a number.
 */
-function findLongestWord(str) {      //Funkcja przeszukuje podane zdanie w celu znalezienia najdłuższego słowa i podaje jego długość.
-  var podzString = str.split(" ");   //Dzieli string na poszczególne słowa.
+function findLongestWord(str) {       //Funkcja przeszukuje podane zdanie w celu znalezienia najdłuższego słowa i podaje jego długość.
+  var podzString = str.split(" ");    //Dzieli string na poszczególne słowa.
   
-  var fruits = [];                   //Tworzy zmienną fruits poza pętlą for.
+  var fruits = [];                    //Tworzy zmienną fruits poza pętlą for.
   for(i=0; i<podzString.length; i++){
-    var temp = podzString[i].length; //Tworzy zmienną "temp", która zbiera długości poszczególnych słów w każdej iteracji.
-    fruits.push(temp);               //Długości każdego słowa są magazynowane w array "fruits".
+    var temp = podzString[i].length;  //Tworzy zmienną "temp", która zbiera długości poszczególnych słów w każdej iteracji.
+    fruits.push(temp);                //Długości każdego słowa są magazynowane w array "fruits".
   }
 
   console.log("Before sorting: " + fruits);
