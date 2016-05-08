@@ -13,8 +13,9 @@ function findLongestWord(str) {      //Funkcja przeszukuje podane zdanie w celu 
   }
 
   console.log("Before sorting: " + fruits);
-  var posortowane = fruits.sort(function(a, b){return a-b});//Sortuje array "fruits" od najniższej do najwyższej wartości i przypisuje ją do zmiennej "posortowane". Użyłem compare function, ponieważ zwykłe sort nie działało dając efekt w postaci: [ 1, 10, 19, 2, 2, 2, 3, 4, 4, 4 ].
+  var posortowane = fruits.sort(function(a, b){return a-b}); //Sortuje array "fruits" od najniższej do najwyższej wartości i przypisuje ją do zmiennej "posortowane". Użyłem compare function, ponieważ zwykłe sort nie działało dając efekt w postaci: [ 1, 10, 19, 2, 2, 2, 3, 4, 4, 4 ].
   console.log("After sorting: " + posortowane);
+
 /*
 compareFunction
 Optional. A function that defines an alternative sort order. The function should return a negative, zero, or positive value, depending on the arguments, like:
@@ -32,7 +33,7 @@ The function calculates 40-100, and returns -60 (a negative value).
 The sort function will sort 40 as a value lower than 100.
 */
 
-  var najwyzsza = posortowane.pop();     //Ucina z array "posortowane" ostatnią pozycję, czyli w tym przypadku najwyższą wartość.
+  var najwyzsza = posortowane.pop();                          //Ucina z array "posortowane" ostatnią pozycję, czyli w tym przypadku najwyższą wartość, której znalezienie było naszym celem.
   console.log("Longest word has " + najwyzsza + " letters!");
     return najwyzsza;
 }
