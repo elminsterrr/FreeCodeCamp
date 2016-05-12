@@ -36,7 +36,7 @@ function destroyer(arr) {
   
   function tester(element) { 
   
-    return args.indexOf(element) === -1;  //Dla elementów których nie ma w "args" [2, 3] zwraca -1 === -1 czyli true. Skoro funkcja callback zwraca true to metoda filter bierze ten element do zwracanej wartości w wierszu 42. W tym przypadku funkcja destroyer zwróci array [1, 1], ponieważ tylko dla tych dwóch jednek args.indexOf(element) === -1 zwróci wartość true.
+    return args.indexOf(element) === -1;  //Dla elementów których nie ma w "args" [2, 3] zwraca -1 === -1 czyli true. Skoro funkcja callback zwraca true to metoda filter bierze ten element do zwracanej wartości w wierszu 42. W tym przypadku funkcja destroyer zwróci array [1, 1], ponieważ tylko dla tych dwóch jedynek args.indexOf(element) === -1 zwróci wartość true.
   }
   var filtering = arr.filter(tester);     //Bierze PIERWSZY ARGUMENT z funkcji "destroyer" czyli "arr" i filtruje go przy użyciu funkcji callback (tester). Funkcja filter przy zastosowaniu funkcji callback (tester) sprawdza czy ELEMENTY z array "args" [2, 3] posiadają indexOf dla POSZCZEGÓLNYCH ELEMENTÓW z "arr" [1, 2, 3, 1, 2, 3], pobieranych jako poszczególny "element".
   return filtering;                        
