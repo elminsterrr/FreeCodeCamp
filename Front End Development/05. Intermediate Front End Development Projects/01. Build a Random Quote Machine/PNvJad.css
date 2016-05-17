@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: grey;
+  font-family: Verdana;
+  font-size: 50px;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-family: Times New Roman;
+}
+
+.quotes {
+  background-color: #89e55b;
+  width: 33%;
+  margin: auto;
+  border-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 25px;
+  height: auto;
+  color: #734d26;
+}
+
+.quoteConnectingElement {
+  font-size: 30px;
+}
+
+.authorConnectingElement {
+  font-size: 20px;
+  font-style: italic;
+}
