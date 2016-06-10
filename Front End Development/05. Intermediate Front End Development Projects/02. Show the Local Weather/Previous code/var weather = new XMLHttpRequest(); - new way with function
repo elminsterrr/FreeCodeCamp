@@ -1,0 +1,24 @@
+var weather = new XMLHttpRequest();
+weather.open("GET", "https://api.wunderground.com/api/cd8c7ea98a37877f/conditions/q/CA/San_Francisco.json", false);
+weather.send(null);
+
+var r = JSON.parse(weather.response);
+
+var currentLocation = "Current location: " + r.current_observation.display_location.full + "<br />";
+
+var tempF = "Current temp (F): " + r.current_observation.temp_f + " <br />";
+
+var tempC = "Current temp (C): " + r.current_observation.temp_c + " <br />";
+
+var wind = "Current wind: " + r.current_observation.wind_string + " <br />";
+
+function easyCopy(argument1, argument2) {
+  document.getElementById(argument1).innerHTML = argument2;  	
+}
+
+easyCopy("currentLocation", currentLocation);
+easyCopy("tempF", tempF);
+easyCopy("tempC", tempC);
+easyCopy("wind", wind);
+
+/* http://api.wunderground.com/api/cd8c7ea98a37877f/conditions/q/CA/San_Francisco.json */

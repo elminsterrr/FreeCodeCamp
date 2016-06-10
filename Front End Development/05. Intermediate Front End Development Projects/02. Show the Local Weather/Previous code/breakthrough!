@@ -1,0 +1,24 @@
+$(document).ready(function(){
+    $("button").click(function(){
+        $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=50.824180000000005&lon=16.268914499999998&appid=a68f6031804b4a06c46e4944a5599012", function(result) {
+          console.log("DZIAŁA!");
+        });
+    });
+});
+
+-----
+$(document).ready(function(){
+    $("button").click(function(){
+        $.ajax({
+          url: "http://api.openweathermap.org/data/2.5/weather?lat=50.824180000000005&lon=16.268914499999998&appid=a68f6031804b4a06c46e4944a5599012",
+          dataType: "json",
+          type: "get",
+          cache: false,
+          success: function(data) {
+            console.log(data)
+          }
+        });
+    });
+});
+
+-----
