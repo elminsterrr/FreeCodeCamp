@@ -1,0 +1,43 @@
+
+<script>
+  $(document).ready(function() {
+
+    $("#getMessage").on("click", function(){
+      // Only change code below this line.
+      
+      $.getJSON("/json/cats.json", function(zmienna_x) {
+        $(".message").html(JSON.stringify(zmienna_x));
+      });
+/*
+[{"id":0,"imageLink":"https://s3.amazonaws.com/freecodecamp/funny-cat.jpg","codeNames":["Juggernaut","Mrs. Wallace","Buttercup"]},{"id":1,"imageLink":"https://s3.amazonaws.com/freecodecamp/grumpy-cat.jpg","codeNames":["Oscar","Scrooge","Tyrion"]},{"id":2,"imageLink":"https://s3.amazonaws.com/freecodecamp/mischievous-cat.jpg","codeNames":["The Doctor","Loki","Joker"]}]
+*/
+
+
+      /*
+      The JSON.stringify() method converts a JavaScript value to a JSON string, optionally replacing values if a replacer function is specified, or optionally including only the specified properties if a replacer array is specified.
+      */
+
+
+      // Only change code above this line.
+    });
+
+  });
+</script>
+
+<div class="container-fluid">
+  <div class = "row text-center">
+    <h2>Cat Photo Finder</h2>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12 well message">
+      The message will go here
+    </div>
+  </div>
+  <div class = "row text-center">
+    <div class = "col-xs-12">
+      <button id = "getMessage" class = "btn btn-primary">
+        Get Message
+      </button>
+    </div>
+  </div>
+</div>
