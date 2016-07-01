@@ -1,0 +1,24 @@
+/*https://www.youtube.com/watch?v=gwTkd52Dm48&feature=youtu.be*/
+
+/*REPL.IT
+
+var urlStartingAddress = "https://en.wikipedia.org/w/api.php";
+var urlCommands = "?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json";
+var urlReadyAddress = urlStartingAddress + urlCommands; //+ sejfLatitude + "," + sejfLongitude + ".json";
+
+console.log(urlReadyAddress);
+
+
+var output = document.getElementById("output");
+var ajaxhttp = new XMLHttpRequest();
+var url = urlReadyAddress;
+
+ajaxhttp.open("GET", url, true);
+ajaxhttp.setRequestHeader("content-type", "application/json");
+ajaxhttp.onreadystatechange = function() {
+	if (ajax.readyState == 4 && ajaxhttp.status == 200) {
+		var jcontent = JSON.parse(ajaxhttp.responseText);
+		output.innerHtmL = jcontent.firstName + " " +jcontent.lastName;
+	}
+}
+*/

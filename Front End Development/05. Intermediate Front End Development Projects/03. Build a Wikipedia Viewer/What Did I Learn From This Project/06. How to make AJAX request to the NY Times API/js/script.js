@@ -45,7 +45,7 @@ function loadData() {
       dataType: 'json',
       type: 'GET',
     }).done(function(result) {
-        var items =[];
+        var items = [];
         $(result.response.docs).each(function(index, value) {
             console.log(value.headline.main);
             console.log(value.web_url);
