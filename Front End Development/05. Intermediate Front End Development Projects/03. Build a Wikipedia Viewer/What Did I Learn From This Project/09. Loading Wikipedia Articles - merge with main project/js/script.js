@@ -10,6 +10,7 @@ function loadData() {
     // clear out old data before new request
     $wikiElem.text("");
     $nytElem.text("");
+    $(".img-container").text("");
     
     $(function whiteFirst() {
 
@@ -19,13 +20,14 @@ function loadData() {
         console.log(street_input + ", " + city_input);
         console.log('                              ');
 
-        var firstElement = '<img class="bgimg" src="https://maps.googleapis.com/maps/api/streetview?size=600x400&location=';
+        var firstElement = '<img class="bgimg" src="https://maps.googleapis.com/maps/api/streetview?size=1280x1024&location=';
         var secondElement = street_input + ', ' + city_input;
         var thirdElement = '&heading=151.78&pitch=-0.76&key=AIzaSyD6QmGWiFoeHsVdRG0rTfcB6bd_Miqm_x0">';
         var sumOfAllFears = firstElement + secondElement + thirdElement;
 
         $greeting.text('So, you want to live at ' + street_input + ", " + city_input + '?');
-        $body.append(sumOfAllFears);
+        //$body.append(sumOfAllFears);
+        $(".img-container").append(sumOfAllFears);
 
         //MY NY TIMES AJAX GOES HERE - TOP
         var searchQuery = city_input;
