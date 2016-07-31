@@ -1,0 +1,46 @@
+/* Created by: Elminster White - elminsterthewhite@gmail.com */
+
+hr {
+  margin-top: 0.250rem;
+  margin-bottom: 0.500rem;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-border-red {
+  border-color: red;
+  border-width: 0.475rem;
+  border-style: solid;
+}
+
+.logo-border-green {
+  border-color: #66FF00;
+  border-width: 0.475rem;
+  border-style: solid;
+}
+
+.pic {
+  height: auto;
+  width: auto;
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.name {
+  margin-top: 0.250rem;
+  margin-bottom: 0rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.information {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
