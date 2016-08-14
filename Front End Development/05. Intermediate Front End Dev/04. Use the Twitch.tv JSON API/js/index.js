@@ -28,7 +28,7 @@ $(document).ready(function() {
 
         if (result.status === 422) {
 
-          /* Elminster - Maybe it isn't good idea to put HTML (with bootstrap) inside JavaScript code, but on my current level of knowledge it was the fastest way to complete this. I hope to find more elegant and secure solution in the future. */
+          /* Elminster White - Maybe it isn't good idea to put HTML (with bootstrap) inside JavaScript code, but on my current level of knowledge it was the fastest way to complete this. I hope to find better solution in the future. */
 
           var smallHtml1 = '<div class="row"><div class="col-xs-4 col-xs-offset-4"><h4>';
           var smallHtml2 = '</h4><div class="well"><div class="row"><div class="row vertical-center"><div class="col-xs-12"><div class="logo">';
