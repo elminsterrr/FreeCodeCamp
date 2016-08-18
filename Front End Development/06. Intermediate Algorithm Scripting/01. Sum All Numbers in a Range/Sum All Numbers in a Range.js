@@ -1,4 +1,6 @@
-function sumAll(startingArray) {                //Challenge: We'll pass you an array of two numbers. Return the sum of those two numbers and all numbers between them.
+/*Instructions: We'll pass you an array of two numbers. Return the sum of those two 
+numbers and all numbers between them.*/
+function sumAll(startingArray) {
   var allNumbersArr = [];
 
   function maxMinOrder(arr) {                   //Function sorts array from max value to min value, example [1, 4] => [4, 1].
