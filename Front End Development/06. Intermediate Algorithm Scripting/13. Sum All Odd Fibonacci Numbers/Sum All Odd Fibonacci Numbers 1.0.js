@@ -45,7 +45,7 @@ function sumFibs(number) {
     var k = 0;
     var sum = 0;
     for(k in finArr) {
-      if (finArr[k] <= number) {  //Elminster White - THIS WAS thE KEY!!!!!
+      if (finArr[k] <= number) {  //Elminster White - key if statement.
           sum = sum + finArr[k];
       }
     }
