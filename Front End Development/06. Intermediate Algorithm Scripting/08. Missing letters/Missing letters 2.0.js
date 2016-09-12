@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/DNqL
+Working example: https://repl.it/DNqL
 
 Instructions: Find the missing letter in the passed letter range and return it.
 

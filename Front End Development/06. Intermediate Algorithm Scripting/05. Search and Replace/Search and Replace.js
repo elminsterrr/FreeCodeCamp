@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/CqoN/0
+Working example: https://repl.it/CqoN/0
 
 Instructions:
 Search and Replace

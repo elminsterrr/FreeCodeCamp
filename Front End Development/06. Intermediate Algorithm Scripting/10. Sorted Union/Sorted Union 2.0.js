@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/DRzN
+Working example: https://repl.it/DRzN
 
 Instructions: Write a function that takes two or more arrays and returns 
 a new array of unique values in the order of the original provided arrays.

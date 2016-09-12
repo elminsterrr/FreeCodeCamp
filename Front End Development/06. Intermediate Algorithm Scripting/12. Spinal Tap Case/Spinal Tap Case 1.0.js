@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/D3jl
+Working example: https://repl.it/D3jl
 
 Instructions: Convert a string to spinal case. 
 Spinal case is all-lowercase-words-joined-by-dashes.

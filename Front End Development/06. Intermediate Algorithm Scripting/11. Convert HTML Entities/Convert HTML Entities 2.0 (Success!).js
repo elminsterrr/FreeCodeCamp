@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/DYdT
+Working example: https://repl.it/DYdT
 
 Instructions: Convert the characters:
 

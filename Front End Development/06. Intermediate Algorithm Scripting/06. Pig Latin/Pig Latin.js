@@ -1,5 +1,5 @@
 /* 
-Working example: http://repl.it/CrFE/0
+Working example: https://repl.it/CrFE/0
 Translate the provided string to pig latin.
 
 Pig Latin takes the first consonant (or consonant cluster) of an English word, 

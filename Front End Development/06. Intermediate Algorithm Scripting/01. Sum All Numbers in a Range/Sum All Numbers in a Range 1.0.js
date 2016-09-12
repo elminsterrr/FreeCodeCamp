@@ -1,5 +1,9 @@
-/*Instructions: We'll pass you an array of two numbers. Return the sum of those two 
-numbers and all numbers between them.*/
+/*
+Working example: https://repl.it/D7IE
+
+Instructions: We'll pass you an array of two numbers. Return the sum of those two 
+numbers and all numbers between them.
+*/
 function sumAll(startingArray) {
   var allNumbersArr = [];
 

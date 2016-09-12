@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/DAEW/5
+Working example: https://repl.it/DAEW/5
 
 Instructions: The DNA strand is missing the pairing element.
 Take each character, get its pair, and return the results as a 2d array.

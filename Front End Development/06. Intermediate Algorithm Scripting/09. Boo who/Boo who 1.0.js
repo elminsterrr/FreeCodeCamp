@@ -1,5 +1,5 @@
 /*
-Working example: http://repl.it/DOm1
+Working example: https://repl.it/DOm1
 
 Instructions: Check if a value is classified as a boolean primitive. Return true or false.
 
