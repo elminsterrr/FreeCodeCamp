@@ -78,6 +78,7 @@ smallestCommons([5, 1]); //should return 60.
 //smallestCommons([23, 18]) //should return 6056820.
 //end---------------------------------------------
 
+/*
 1, 2, 3, 4, 5
 
 
@@ -87,9 +88,4 @@ smallestCommons([5, 1]); //should return 60.
 3  ->> 3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60
 4  ->> 4,8,12,16,20,24,28,32,36,40,44,48,52,56,60
 5  ->> 5,10,15,20,25,30,35,40,45,50,55,60
-
-
-//smallestCommons([1, 5]) //should return 60.
-//smallestCommons([5, 1]) //should return 60.
-//smallestCommons([1, 13]) //should return 360360.
-//smallestCommons([23, 18]) //should return 6056820.
+*/
