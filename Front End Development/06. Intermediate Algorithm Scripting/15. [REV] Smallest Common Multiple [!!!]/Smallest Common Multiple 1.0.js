@@ -1,5 +1,5 @@
 /*
-Working example: https://repl.it/DbqX/0
+Working example: https://repl.it/DbqX/1
 
 Instructions: 
 Find the smallest common multiple of the provided parameters
