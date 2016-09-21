@@ -1,14 +1,15 @@
 /* Created by: Elminster White - elminsterthewhite@gmail.com */
+/* Patch to ver 1.2 added 2016.09.21 */
 
 $(document).ready(function() {
 
   var twichApiContainer = [];
 
   function makeApiLinksReady() {
-    var twichChannels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "RobotCaleb", "noobs2ninjas", "sanchowest", "comster404"];
+    var twichChannels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "RobotCaleb", "noobs2ninjas", "sanchowest"];
     var twitchApiZ = "";
     for (var z = 0; z < twichChannels.length; z++) {
-      twitchApiZ = 'https://api.twitch.tv/kraken/streams/' + twichChannels[z] + '?callback=?';
+      twitchApiZ = 'https://api.twitch.tv/kraken/streams/' + twichChannels[z] + '?callback=?&client_id=krgs14ixov5b8fc5vm4t3xaxv9hsetj';
       twichApiContainer.push(twitchApiZ);
     }
   }
@@ -20,15 +21,18 @@ $(document).ready(function() {
 
     for (var y = 0; y < twichApiContainer.length; y++) {
       $.ajax({
-        url: twichApiContainer[y],
-        dataType: 'jsonp',
         type: 'GET',
+        url: twichApiContainer[y],
+        headers: {
+          'Client-ID': 'krgs14ixov5b8fc5vm4t3xaxv9hsetj'
+        },
+        dataType: 'jsonp',
       }).done(function(result) {
-        console.log(result);
+        console.log('@@@@@@@', result);
 
         if (result.status === 422) {
 
-          /* Elminster White - Maybe it isn't good idea to put HTML (with bootstrap) inside JavaScript code, but on my current level of knowledge it was the fastest way to complete this. I hope to find better solution in the future. */
+          /* Elminster White - I know, it is not a good idea to put HTML inside JavaScript code, but on my current level of knowledge it was the fastest way to complete this. I hope to find better solution in the future. */
 
           var smallHtml1 = '<div class="row"><div class="col-xs-4 col-xs-offset-4"><h4>';
           var smallHtml2 = '</h4><div class="well"><div class="row"><div class="row vertical-center"><div class="col-xs-12"><div class="logo">';
@@ -70,13 +74,21 @@ $(document).ready(function() {
           clearTimeout(twichRequestTimeout); //This will prevent timeout from happening!
 
         } else {
+          
+          // Elminster White - I was forced to add this patch (patchToVer12) due to an update to the Twitchtv API
+          // which now requires a client id. TL;DR: On Monday, August 8th, 2016, we’re going to really-for-real 
+          // require the Client-ID header on all of your API requests to Kraken.
+          var patchToVer12 = result._links.channel + '?callback=?&client_id=krgs14ixov5b8fc5vm4t3xaxv9hsetj';
 
           $.ajax({
-            url: result._links.channel,
-            dataType: 'jsonp',
             type: 'GET',
+            url: patchToVer12, //result._links.channel,
+            headers: {
+              'Client-ID': 'krgs14ixov5b8fc5vm4t3xaxv9hsetj'
+            },
+            dataType: 'jsonp',
           }).done(function(result2) {
-
+            
             var anotherLargeHtml1 = '<div class="row"><div class="col-xs-4 col-xs-offset-4"><h4>';
             var anotherLargeHtml2 = '</h4><div class="well"><div class="row"><div class="row vertical-center"><div class="col-xs-12"><div class="logo">';
             var anotherSupplement1 = '<img class="pic logo-border-red" src=';
