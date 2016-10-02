@@ -29,7 +29,7 @@ function truthCheck(collectionArray, secondArgument) {
       //console.log(collectionArray[i][secondArgument]);
       //If collectionArray[i][secondArgument] is true, that means that
       //this property name "sex" value (in this case "male") exist and
-      // is not one of falsy values. Then push string "true" to an array result.
+      //is not one of falsy values. Then push string "true" to an array result.
       if (collectionArray[i][secondArgument]) {
         result.push('true');
       }
@@ -38,7 +38,7 @@ function truthCheck(collectionArray, secondArgument) {
     collectionArrayObjectKeys = Object.keys(collectionArray);
     return result;
   };
-  //Final statement. If realCheck is true retrun true as result of whole truthChech
+  //Final statement. If realCheck is true retrun true as result of whole truthCheck
   //function.
   if (realCheck(truthCheckResult(collectionArray, secondArgument))) {
     return true;
