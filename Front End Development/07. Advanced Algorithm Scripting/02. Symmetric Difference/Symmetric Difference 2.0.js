@@ -32,7 +32,7 @@ function sym(args) {
     return destroyer(a, b);
   });
   function destroyer(arr, second) {
-  	var args = Array.prototype.slice.call(arguments);
+    var args = Array.prototype.slice.call(arguments);
     function firstCase(arr) {
       function tester1(element) {
         return args[1].indexOf(element) === -1;  
@@ -53,7 +53,7 @@ function sym(args) {
     return mergedAndSorted;
   }
   function finalCheck(input) {
-  	var filtered = [];
+    var filtered = [];
     input.map(function(elementToCheck) {
       if (filtered.indexOf(elementToCheck) === -1 ) {
         filtered.push(elementToCheck);
