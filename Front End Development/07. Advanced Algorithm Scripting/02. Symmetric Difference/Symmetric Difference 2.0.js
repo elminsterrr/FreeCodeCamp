@@ -55,7 +55,7 @@ function sym(args) {
   function finalCheck(input) {
     var filtered = [];
     input.map(function(elementToCheck) {
-      if (filtered.indexOf(elementToCheck) === -1 ) {
+      if (filtered.indexOf(elementToCheck) === -1) {
         filtered.push(elementToCheck);
       }
     });
