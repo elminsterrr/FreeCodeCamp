@@ -17,8 +17,10 @@ The radius of the earth is 6367.4447 kilometers,
 and the GM value of earth is 398600.4418 km3s-2.
 */
 function orbitalPeriod(arr) {
-   
-   function orbitalPeriodInside(inputData) {
+  
+  let results = [];
+
+  function orbitalPeriodInside(inputData) {
     const GM = 398600.4418;
     const earthRadius = 6367.4447;
     let averageAltitude = inputData.avgAlt;
@@ -39,7 +41,7 @@ function orbitalPeriod(arr) {
     return myNewObj;
   }
  
-  let results = arr.map(function(oneObj) {
+  results = arr.map(function(oneObj) {
     return orbitalPeriodInside(oneObj);
   });
 
