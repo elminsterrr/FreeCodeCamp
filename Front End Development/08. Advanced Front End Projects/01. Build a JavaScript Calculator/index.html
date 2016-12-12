@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Calculator 1.0</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+<!-- JavaScript Calculator v.1.0 -->
+<!-- Created by: Elminster White - elminsterthewhite@gmail.com -->
+<link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+
+<div id="calculator">
+ 
+  <div class="row">
+    <div id="title"><p><span id="name">CalculatoR</span><span id="created"><br>Made by: Elminster White</span></p></div>
+  </div>
+  
+  <div class="row" id="display">
+    <form>
+      <input type="text" id="inputTextboxScreen" value="0"></input>
+    </form>
+  </div>
+
+  <div class="row">
+    <button id="deleteAll" onClick="whenClicked(this.id)">AC</button>
+    <button id="backOne" onClick="whenClicked(this.id)">CE</button>
+    <button id="/" onClick="whenClicked(this.id)">&divide;</button>
+    <button id="*" onClick="whenClicked(this.id)">&times;</button>
+  </div>
+
+  <div class="row">
+    <button id="7" onClick="whenClicked(this.id)">7</button>
+    <button id="8" onClick="whenClicked(this.id)">8</button>
+    <button id="9" onClick="whenClicked(this.id)">9</button>
+    <button id="+" onClick="whenClicked(this.id)">+</button>
+  </div>
+
+  <div class="row">
+    <button id="4" onClick="whenClicked(this.id)">4</button>
+    <button id="5" onClick="whenClicked(this.id)">5</button>
+    <button id="6" onClick="whenClicked(this.id)">6</button>
+    <button id="-" onClick="whenClicked(this.id)">-</button>
+  </div>
+
+  <div class="row">
+    <button id="1" onClick="whenClicked(this.id)">1</button>
+    <button id="2" onClick="whenClicked(this.id)">2</button>
+    <button id="3" onClick="whenClicked(this.id)">3</button>
+    <button id="." onClick="whenClicked(this.id)">.</button>
+  </div>
+
+  <div class="row three">
+    <button id="0" onClick="whenClicked(this.id)">0</button>
+    <button id="total" onClick="whenClicked(this.id)">=</button>
+  </div>
+  
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

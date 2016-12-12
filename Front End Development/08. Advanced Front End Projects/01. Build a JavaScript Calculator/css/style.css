@@ -1,0 +1,86 @@
+body {
+  background: #b6c5e3;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 3em;
+}
+
+#calculator {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#display {
+  height: 60px;
+  background: #1f253e;
+  color: #fff;
+}
+
+#inputTextboxScreen {
+  background: #1f253e;
+  width: 300px;
+  border: none;
+  border-color: transparent;
+  text-align: right;
+  font-family: 'Graduate', cursive;
+  font-size: 2em;
+  padding-right: 0.50em;
+}
+
+#name {
+  font-family: 'Graduate', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+#created {
+  font-size: 0.70em;
+  text-align: center;
+}
+
+#title{
+  background: #0e111c;
+  font-size: 1.3em;
+  color: #fff;
+  text-align: center;
+}
+
+#title p {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  font-size: 2em;
+  background: #0e111c;
+  color: #fff;
+  border: none;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 2em;
+  float: left;
+}
+
+#deleteAll:hover{
+  background: #e34444;
+}
+
+#total:hover{
+  background: #00aed3;
+}
+
+button:hover {
+  background: #141827;
+  color: #fff;
+}
+
+.row {
+  width: 300px;
+}
+
+.row button {
+  width: 25%;
+}
+
+.three button {
+  width: 50%;
+}
