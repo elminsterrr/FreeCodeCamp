@@ -3,7 +3,7 @@
 
 "use strict";
 
-// Stores inputs from the user and also used to refresh
+// Stores inputs from the user and also is used to refresh
 let inputs = [];
 // Attach screenUpdate to id="screen" in HTML
 const screenUpdate = document.getElementById("inputTextboxScreen");
