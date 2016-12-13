@@ -23,8 +23,8 @@ function whenClicked(clickedId) {
   }
   
   // Function that does the math
-  function evil(math) {
-    return new Function('return ' + math)();
+  function evilAndDangerous(math) {
+    return eval(math);
   }
   
   // Function that calculates total value using evil function
@@ -33,7 +33,7 @@ function whenClicked(clickedId) {
     // It is always one time declared when getTotal
     // starts, and I don't reassign it when getTotal
     // is running, so I can use const
-    const refresh = evil(inputs.join(""));
+    const refresh = evilAndDangerous(inputs.join(""));
     // Here I am changing inputs, thats why I declare inputs with let
     inputs = [refresh];
     screenUpdate.value = inputs;
