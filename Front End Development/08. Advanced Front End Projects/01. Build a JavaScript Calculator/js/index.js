@@ -1,6 +1,8 @@
 // JavaScript Calculator v.1.0
 // Created by: Elminster White - elminsterthewhite@gmail.com
+
 "use strict";
+
 // Stores inputs from the user and also used to refresh
 let inputs = [];
 // Attach screenUpdate to id="screen" in HTML
