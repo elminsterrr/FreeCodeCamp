@@ -10,7 +10,7 @@ body {
 }
 
 #display {
-  height: 60px;
+  height: 75px;
   background: #1f253e;
   color: #fff;
 }
@@ -25,6 +25,18 @@ body {
   font-size: 2em;
   padding-left: 0.50em;
   padding-right: 0.50em;
+}
+
+#inTxtboxScrOper {
+  background: #1f253e;
+  width: 300px;
+  border: none;
+  border-color: transparent;
+  text-align: right;
+  font-family: 'Graduate', cursive;
+  font-size: 1.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 #name {
