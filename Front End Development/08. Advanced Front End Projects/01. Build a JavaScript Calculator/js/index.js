@@ -44,8 +44,9 @@ function whenClicked(clickedId) {
 
   // Preventing this from happening: 1++2
   if ((clickedId === "+" || clickedId === "-" || clickedId === "*" ||
-    clickedId === "/" || clickedId === ".") && (last === "+" ||
-    last === "-" || last === "*" || last === "/" || last === ".")) {
+      clickedId === "/" || clickedId === ".") && 
+      (last === "+" || last === "-" || last === "*" || last === "/" ||
+      last === ".")) {
     return; // Do nothing when this conditions are fulfilled
   }
 
