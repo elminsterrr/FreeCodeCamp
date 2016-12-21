@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Pomodoro Clock v.1.0 -->
+<!-- Created by: Elminster White - elminsterthewhite@gmail.com -->
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen|Rubik:300">  
+  <div class="audio">
+    <audio data-sound="backToWork" src="sounds/backToWork.wav"></audio>
+    <audio data-sound="workDone" src="sounds/workDone.wav"></audio> 
+  </div>
+  
+  <div class="container">
+    <div class="box1">
+      <div class="timer">
+        
+        <div class="box0">
+          Pomodoro Clock
+        </div>
+        
+        <div class="box4">
+          <p class="display__time-left"></p>
+          <p class="display__info"></p>
+        </div>
+        
+        <div class="box2">
+          <div class="keys">
+              
+            <div class="key">
+              <button data-settings="-1" class="settings__breakButton">-</button>
+            </div>
+
+            <p class="display__minusplus" id="valueBreak"></p>
+
+            <div class="key">
+              <button data-settings="+1" class="settings__breakButton">+</button>
+            </div>
+
+            <div class="key">
+              <button data-settings="-1" class="settings__workButton">-</button>
+            </div>
+
+            <p class="display__minusplus" id="valueWork"></p>
+
+            <div class="key">
+              <button data-settings="+1" class="settings__workButton">+</button>
+            </div>
+              
+          </div>
+        </div>
+
+        <div class="box5">
+          <p class="display__end-time"></p>
+        </div>
+         
+        <div class="box9">
+          <button id="buttonMain">START</button>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

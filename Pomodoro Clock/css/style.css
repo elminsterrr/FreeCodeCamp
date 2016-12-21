@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: monospace;
+  background: linear-gradient(to bottom right, #b8d087, #00996d);
+}
+
+p {
+  margin: 0;
+  color: 2dcf9c;
+}
+
+#buttonMain {
+  background: -webkit-linear-gradient(315deg, #B8D087, #00996D);
+  background: linear-gradient(135deg, #B8D087, #00996D);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  width: 290px;
+  text-align: center;
+  color: white;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+}
+
+.box0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 60px;
+  background: #232326;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  font-family: 'Rubik', monospace;
+  font-size: 18px;
+  color: aliceblue;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 290px;
+  background: transparent;
+}
+
+.box2 { 
+  background: #232326;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  border-bottom: 1px solid black;
+}
+.box3 { 
+  background: #232326;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;  
+  background: #232326;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  height: 220px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.box5 { 
+  background: #232326;
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.8), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.display__time-left {
+  font-weight: 100;
+  font-size: 4rem;
+  margin: 0;
+  color: #4fa370;
+  font-family: 'Rubik', monospace;
+  background: -webkit-linear-gradient(#b8d087, #00996d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.display__info {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Rubik', monospace;
+}
+
+.display__minusplus,
+.display__end-time {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Rubik', monospace;
+  padding: 10px;  
+}
+
+
+.settings__breakButton,
+.settings__workButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Rubik', monospace;
+  padding: 1rem;
+}
+
+button:focus {outline:0;};
