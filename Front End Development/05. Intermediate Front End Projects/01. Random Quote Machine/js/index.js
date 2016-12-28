@@ -6,9 +6,7 @@ $(document).ready(function() {
   function wezCytat() {
 
     function randomRange(myMin, myMax) {
-
       return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
-
     }
 
     var cytaty = [{
@@ -61,21 +59,21 @@ $(document).ready(function() {
     // Losuje i zapobiega powtórzeniu dwa razy tego samego cytatu jeden po drugim
     var losowaLiczba = randomRange(0, cytaty.length - 1);
     if (cytaty[losowaLiczba].autor === ostatniAutor) {
-      // Losuj jeszcze raz
+      // Losuje jeszcze raz
       return wezCytat();
     }
     losowyCytat = cytaty[losowaLiczba].q;
     nieLosowyAutor = cytaty[losowaLiczba].autor;
     ostatniAutor = cytaty[losowaLiczba].autor;  
-    
+    // Wyświetlanie zawartości
     $(".quoteConnectingElement").text(losowyCytat);
     $(".authorConnectingElement").text(nieLosowyAutor);
   }
- 
+  // Obsługa głównego przycisku
   $("#target1").on("click", function() {
     wezCytat(); 
   });
-
+  // Obsługa przycisku "t"
   $("#target2").on("click", function() {
     if (losowyCytat === "") {
       alert("Please use \"New Quote\" button first!");
