@@ -79,11 +79,10 @@ $(document).ready(function() {
       alert("Please use \"New Quote\" button first!");
     } else {
       console.log("B");
-      //Deleting commas because they are changed to #  ( ',' => '#') on twitter page!
+      // Usuwa przec ( ',' => '#')!
       var regex = new RegExp(',', 'g');
-      var losowyCytatWithoutCommas = losowyCytat.replace(regex, '');
-
-      window.open("https://twitter.com/intent/tweet?hashtags=quotes" + " " + losowyCytatWithoutCommas + " " + nieLosowyAutor);
+      var losowyCytatBezPrzec = losowyCytat.replace(regex, '');
+      window.open("https://twitter.com/intent/tweet?hashtags=quotes" + " " + losowyCytatBezPrzec + " " + nieLosowyAutor);
     }
   });
 
