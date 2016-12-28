@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var losowyCytat = "";
   var nieLosowyAutor = "";
+  var ostatniAutor = "";
 
   function wezCytat() {
 
@@ -40,18 +41,39 @@ $(document).ready(function() {
     }, {
       "autor": "–Confucius",
       "q": "It does not matter how slowly you go as long as you do not stop."
+    }, {
+      "autor": "–Heraclitus",
+      "q": "There is nothing permanent except change."
+    }, {
+      "autor": "–Edgar Allan Poe",
+      "q": "All that we see or seem is but a dream within a dream."
+    }, {
+      "autor": "–Leonardo da Vinci",
+      "q": "Learning never exhausts the mind."
+    }, {
+      "autor": "–Will Rogers",
+      "q": "Good judgment comes from experience, and a lot of that comes from bad judgment."
+    }, {
+      "autor": "–Ernest Hemingway",
+      "q": "But man is not made for defeat. A man can be destroyed but not defeated."
     }];
-
+    
+    // Losuje i zapobiega powtórzeniu dwa razy tego samego cytatu jeden po drugim
     var losowaLiczba = randomRange(0, cytaty.length - 1);
+    if (cytaty[losowaLiczba].autor === ostatniAutor) {
+      // Losuj jeszcze raz
+      return wezCytat();
+    }
     losowyCytat = cytaty[losowaLiczba].q;
     nieLosowyAutor = cytaty[losowaLiczba].autor;
-
+    ostatniAutor = cytaty[losowaLiczba].autor;  
+    
     $(".quoteConnectingElement").text(losowyCytat);
     $(".authorConnectingElement").text(nieLosowyAutor);
   }
-
+ 
   $("#target1").on("click", function() {
-    wezCytat();
+    wezCytat(); 
   });
 
   $("#target2").on("click", function() {

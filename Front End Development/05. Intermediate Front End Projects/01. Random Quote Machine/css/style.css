@@ -1,11 +1,28 @@
-body {
-  background-color: black;
+html {
+  box-sizing: border-box;
+  font-size: 10px;
 }
 
-h1 {
-  color: grey;
-  font-family: Verdana;
-  font-size: 50px;
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background:linear-gradient(to bottom right, #b8d087, #00996d);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 p {
@@ -17,7 +34,7 @@ p {
 
 .quotes {
   background-color: #89e55b;
-  width: 33%;
+  width: 600px;
   margin: auto;
   border-color: white;
   border-style: solid;
