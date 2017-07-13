@@ -1,7 +1,6 @@
 var x = new Object();
 console.log(x);
 
-
 var y = {
   imie: 'Przemek',
   wzrost: 179,
