@@ -1,6 +1,6 @@
 let counter = 91;
 
-const id = setInterval(function() {
+const id = setInterval(function () {
   console.log(counter);
   counter++;
   if (counter === 100) {

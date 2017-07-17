@@ -1,9 +1,9 @@
-function potega(argument, cb) {
+function power (argument, cb) {
   if (cb) {
-    cb(argument * argument);    
-  } 
+    cb(argument * argument);
+  }
 }
 
-potega(2, function(wynik) {
-  console.log(wynik); 
+power(2, function (result) {
+  console.log(result);
 });

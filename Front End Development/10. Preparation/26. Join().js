@@ -1,4 +1,3 @@
-const joinMe = ["Split","me","into","an","array"];
-let joinedString = '';
-
-joinedString = joinMe.join(' '); // 'Split me into an array'
+const joinMe = ['Split', 'me', 'into', 'an', 'array'];
+let joinedString = joinMe.join(' ');
+console.log(joinedString); // Split me into an array

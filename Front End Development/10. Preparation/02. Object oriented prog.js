@@ -1,16 +1,14 @@
-var x = new Object();
-console.log(x);
+// var x = new Object(); // Do not use
+// console.log(x);
 
-var y = {
-  imie: 'Przemek',
-  wzrost: 179,
+const objPrzemek = {
+  name: 'Przemek',
+  height: 179,
   legs: 2,
-  howManyLegs: function() {
-    return this.legs;
-  }
+  howManyLegs: () => this.legs
 };
-console.log(y);
-console.log(y.wzrost);
-y.wzrost = 190;
-console.log(y.wzrost);
-console.log(y.howManyLegs());
+console.log(objPrzemek);
+console.log(objPrzemek.height);
+objPrzemek.height = 190;
+console.log(objPrzemek.height);
+console.log(objPrzemek.howManyLegs());

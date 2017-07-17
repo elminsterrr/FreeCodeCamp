@@ -7,9 +7,7 @@
 // then the addition of the three dots does not add to the string length
 // in determining the truncated string.
 
-
-function truncateString(str, num) {
-
+function truncateString (str, num) {
   if (str.length > num) {
     if (num <= 3) {
       const x = str.slice(0, num);
@@ -17,11 +15,11 @@ function truncateString(str, num) {
       return x + '...';
     }
 
-    const y = str.slice(0, num-3);
+    const y = str.slice(0, num - 3);
     return y + '...';
   }
 
   return str;
-
 }
-truncateString("A-tisket a-tasket A green and yellow basket", 11);
+
+truncateString('A-tisket a-tasket A green and yellow basket', 11);

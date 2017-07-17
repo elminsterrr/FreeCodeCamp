@@ -1,12 +1,12 @@
-const wydatki = {
-  typ: 'Wakacje',
-  kwota: 3000
+const car = {
+  type: 'SUV',
+  value: 9000
 };
 
-// var typ = wydatki.typ;
-// var kwota = wydatki.kwota;
+// const type = car.type;
+// const value = car.value;
 
-const { typ, kwota} = wydatki;
+const { type, value } = car;
 
-console.log(typ);   // Wakacje
-console.log(kwota); // 3000
+console.log(type);   // SUV
+console.log(value); // 9000

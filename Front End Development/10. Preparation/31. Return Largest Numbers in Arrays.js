@@ -5,13 +5,12 @@
 // Remember, you can iterate through an array with a simple for loop,
 // and access each member with array syntax arr[i].
 
-function largestOfFour(arr) {
-
-  const x = arr.map(e => e.sort(function(a, b) {
+function largestOfFour (arr) {
+  const myGoal = arr.map(e => e.sort(function (a, b) {
     return a - b;
   }).pop());
 
-  return x;
+  return myGoal;
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);

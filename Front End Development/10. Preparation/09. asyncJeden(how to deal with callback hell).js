@@ -1,5 +1,5 @@
-function asyncJeden() {
-  return new Promise(function(resolve, reject) {
+function asyncOne () {
+  return new Promise(function (resolve, reject) {
     if (true) {
       resolve();
     } else {
@@ -8,8 +8,8 @@ function asyncJeden() {
   });
 }
 
-function asyncDwa() {
-  return new Promise(function(resolve, reject) {
+function asyncTwo () {
+  return new Promise(function (resolve, reject) {
     if (true) {
       resolve();
     } else {
@@ -18,8 +18,8 @@ function asyncDwa() {
   });
 }
 
-function asyncTrzy() {
-  return new Promise(function(resolve, reject) {
+function asyncThree () {
+  return new Promise(function (resolve, reject) {
     if (true) {
       resolve();
     } else {
@@ -28,9 +28,9 @@ function asyncTrzy() {
   });
 }
 
-asyncJeden()
-  .then(asyncDwa)
-  .then(asyncTrzy)
-  .then(function() {
-    console.log('wszystko gotowe!');
+asyncOne()
+  .then(asyncTwo)
+  .then(asyncThree)
+  .then(function () {
+    console.log('Everything is ready!');
   });

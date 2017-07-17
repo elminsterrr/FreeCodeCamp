@@ -1,11 +1,11 @@
-const Bike = function() {
+const Bike = function () {
   let gear;
   // Step 2: The setGear method should "set" the gear equal to whatever the input is.
-  this.setGear = function(change) {
+  this.setGear = function (change) {
     gear = change;
   };
   // Step 3: The getGear method should "get" the gear, so you basically just ask it to return "gear".
-  this.getGear = function() {
+  this.getGear = function () {
     return gear;
   };
 };

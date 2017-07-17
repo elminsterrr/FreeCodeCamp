@@ -1,9 +1,9 @@
 let counter = 0;
 
-const setInterval_ID = setInterval(function() {
+const setIntervalID = setInterval(function () {
   counter++;
   console.log('tic');
   if (counter === 5) {
-    clearInterval(setInterval_ID);
+    clearInterval(setIntervalID);
   }
 }, 1000);

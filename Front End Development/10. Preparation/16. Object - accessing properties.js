@@ -2,7 +2,7 @@
 
 const myObj = {
   name: 'Przemek',
-  wzrost: 179
+  height: 179
 };
 
 console.log(myObj.name); // using dot notation

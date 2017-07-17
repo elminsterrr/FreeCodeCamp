@@ -1,5 +1,5 @@
-const addC = function(a) {
-  return function(b) {
+const addC = function (a) {
+  return function (b) {
     return a + b;
   };
 };

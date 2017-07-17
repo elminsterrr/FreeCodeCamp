@@ -2,17 +2,16 @@
 // into groups the length of size (second argument)
 // and returns them as a two-dimensional array.
 
-
-function chunkArrayInGroups(arr, size) {
-
+function chunkArrayInGroups (arr, size) {
   const z = [];
 
   for (let i = 0; i < arr.length; i += size) {
-    const a = arr.slice( arr.indexOf(arr[i]) , (arr.indexOf(arr[i]) + size) );
+    const position = arr.indexOf(arr[i]);
+    const a = arr.slice(position, (position + size));
     z.push(a);
   }
 
   return z;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);

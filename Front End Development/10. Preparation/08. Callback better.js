@@ -1,15 +1,10 @@
-function doItWhenReady() {
-  alert('Hello from callback!');
+function doItWhenReady () {
+  console.log('Hello from callback!');
 }
 
-function process(callback) {
-  if (typeof callback !== 'function') {
-    callback = false;
-  }
-
-  if (callback) {
-    callback();
-  }
+function process (callback) {
+  if (typeof callback !== 'function') return;
+  callback();
 }
 
 process(doItWhenReady);
