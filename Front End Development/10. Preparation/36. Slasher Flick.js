@@ -3,8 +3,7 @@
 // Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
 function slasher (arr, howMany) {
-  const x = arr.slice(howMany);
-  return x;
+  return arr.slice(howMany);
 }
 
 slasher([1, 2, 3], 2);    // should return [3].

@@ -3,15 +3,15 @@
 // and returns them as a two-dimensional array.
 
 function chunkArrayInGroups (arr, size) {
-  const z = [];
+  const myGoal = [];
 
   for (let i = 0; i < arr.length; i += size) {
     const position = arr.indexOf(arr[i]);
-    const a = arr.slice(position, (position + size));
-    z.push(a);
+    const sliced = arr.slice(position, (position + size));
+    myGoal.push(sliced);
   }
 
-  return z;
+  return myGoal;
 }
 
 chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);

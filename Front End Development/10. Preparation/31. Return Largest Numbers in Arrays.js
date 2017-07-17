@@ -6,7 +6,7 @@
 // and access each member with array syntax arr[i].
 
 function largestOfFour (arr) {
-  const myGoal = arr.map(e => e.sort(function (a, b) {
+  const myGoal = arr.map(el => el.sort(function (a, b) {
     return a - b;
   }).pop());
 

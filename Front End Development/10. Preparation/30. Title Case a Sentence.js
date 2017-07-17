@@ -2,13 +2,13 @@
 // Make sure the rest of the word is in lower case.
 
 function titleCase (str) {
-  const a = str.split(' ');
+  const breakedDown = str.split(' ');
 
-  const b = a.map(function (e) {
+  const toUpper = breakedDown.map(function (e) {
     return e.split('')[0].toUpperCase() + (e.slice(1, e.length).toLowerCase());
   });
 
-  return b.join(' ');
+  return toUpper.join(' ');
 }
 
 titleCase('I\'m a little tea pot');

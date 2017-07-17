@@ -1,10 +1,10 @@
-function a () {
-  console.log(x); // undefined
-  if (true) {
-    console.log(); // Example
+function hoisting (arg) {
+  console.log(myVar); // undefined
+  if (arg > 5) {
+    console.log(arg); // Example
   }
-  var x = 1;
-  console.log(x); // 1
+  var myVar = 1;
+  console.log(myVar); // 1
 }
 
-a();
+hoisting(10);

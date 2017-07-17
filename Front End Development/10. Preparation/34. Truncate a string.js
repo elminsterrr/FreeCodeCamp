@@ -10,13 +10,11 @@
 function truncateString (str, num) {
   if (str.length > num) {
     if (num <= 3) {
-      const x = str.slice(0, num);
-      console.log(x);
-      return x + '...';
+      const slicedOne = str.slice(0, num);
+      return slicedOne + '...';
     }
-
-    const y = str.slice(0, num - 3);
-    return y + '...';
+    const slicedTwo = str.slice(0, num - 3);
+    return slicedTwo + '...';
   }
 
   return str;

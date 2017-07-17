@@ -1,12 +1,12 @@
-const zmienna = {
-  imie: 'Przemek',
-  wzrost: 179
+const variable = {
+  name: 'Przemek',
+  height: 179
 };
 
 function test () {
-  if ((zmienna !== null) && (typeof (zmienna) === 'object')) {
+  if ((variable !== null) && (typeof (variable) === 'object')) {
     console.log('To jest obiekt!');
   }
 }
 
-test();
+test(); // 'To jest obiekt!'

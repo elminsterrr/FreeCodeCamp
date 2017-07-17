@@ -1,12 +1,12 @@
 const objOne = {
-  x: 1,
+  veryImportant: 1,
   show: function () {
-    console.log(this.x);
+    console.log(this.veryImportant);
   }
 };
 
 const objTwo = {
-  x: 2
+  veryImportant: 2
 };
 
 const binded = objOne.show.bind(objTwo);
