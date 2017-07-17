@@ -5,4 +5,4 @@ singleVal = array.reduce(function(prev, acc) {
   return prev + acc;
 });
 
-console.log(singleVal); //30
+console.log(singleVal); // 30
