@@ -5,4 +5,4 @@ function reverseString (str) {
     .join('');
 }
 
-reverseString('hello');
+reverseString('hello'); // 'olleh'
