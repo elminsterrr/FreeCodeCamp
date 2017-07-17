@@ -1,6 +1,6 @@
 const Bike = function() {
   let gear;
-  // Step 2: The setGear method should "set" the gear equal to whatever the input is..
+  // Step 2: The setGear method should "set" the gear equal to whatever the input is.
   this.setGear = function(change) {
     gear = change;
   };
