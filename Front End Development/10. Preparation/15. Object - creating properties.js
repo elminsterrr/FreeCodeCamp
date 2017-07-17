@@ -2,6 +2,6 @@
 
 const myObj = {};
 myObj.name = 'Przemek';
-console.log(myObj);
+console.log(myObj); // { name: 'Przemek' }
 myObj.name = 'Bartek';
-console.log(myObj);
+console.log(myObj); // { name: 'Bartek' }
