@@ -1,4 +1,4 @@
-function duplicate(arr) {
+function duplicate (arr) {
   let target = [];
   let checker;
   arr.map(function (element, index, proccessedArray) {
