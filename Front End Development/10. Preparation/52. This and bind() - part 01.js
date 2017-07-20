@@ -1,4 +1,4 @@
-function talk() {
+function talk () {
   console.log(this.sound);
 }
 

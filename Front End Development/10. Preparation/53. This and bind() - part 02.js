@@ -1,6 +1,6 @@
 let talk = function () {
   console.log(this.sound);
-}
+};
 
 let boromir = {
   speak: talk,
