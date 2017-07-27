@@ -4,26 +4,12 @@
 // and backward, ignoring punctuation, case, and spacing.
 
 function palindrome (str) {
-  const testArray = [];
-  const normalizedStr = str.replace(/[\W_]/g, '').toLowerCase();
-  const split = normalizedStr.split('');
-  const splitAndReverse = [...split].reverse();
-
-  split.map(function (element, index) {
-    console.log(element, index, splitAndReverse[index]);
-    if (element === splitAndReverse[index]) {
-      testArray.push('OK');
-    }
-  });
-
-  console.log(testArray);
-  if (testArray.length === split.length) {
-    return true;
-  }
-  return false;
+  let cleaned = str.replace(/[\W_]/g, '').toLowerCase();
+  return cleaned.split('').reverse().join('') === cleaned;
 }
 
-palindrome('eye'); // should return a boolean.
+palindrome('My age is 0, 0 si ega ym.'); // myageis00siegaym // true
+// palindrome('eye'); // should return a boolean.
 // palindrome('eye'); // should return true.
 // palindrome('_eye'); // should return true.
 // palindrome('race car'); // should return true.
