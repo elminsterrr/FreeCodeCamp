@@ -1,6 +1,6 @@
 // How would you compare two objects in JavaScript?
 
-function compare(aObj, bObj) {
+function compare (aObj, bObj) {
   let aProp = Object.getOwnPropertyNames(aObj);
   let bProp = Object.getOwnPropertyNames(bObj);
 

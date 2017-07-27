@@ -6,11 +6,11 @@
 // and access each member with array syntax arr[i].
 
 function largestOfFour (arr) {
-  const myGoal = arr.map(el => el.sort(function (a, b) {
-    return a - b;
-  }).pop());
-
-  return myGoal;
+  let resultArray = arr
+    .map(function (element) {
+      return Math.max(...element);
+    });
+  return resultArray;
 }
 
-largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]); // [ 5, 27, 39, 1001 ]
