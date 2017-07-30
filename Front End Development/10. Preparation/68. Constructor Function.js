@@ -1,15 +1,15 @@
-function Bike(wheels, seats, engine) {
+function Bike (wheels, seats, engine) {
   this.wheels = wheels;
   this.seats = seats;
   this.engine = engine;
 
   let gear = 0;
 
-  this.setGear = function(change) {
+  this.setGear = function (change) {
     gear = change;
   };
 
-  this.getGear = function() {
+  this.getGear = function () {
     return gear;
   };
 }
