@@ -11,5 +11,5 @@ function balanced(str) {
 
 // balanced('()'); // true
 // balanced(')('); // false
-//balanced('(((('); // false
+// balanced('(((('); // false
 balanced('(()'); // false
